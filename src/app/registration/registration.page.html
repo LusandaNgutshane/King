@@ -1,0 +1,68 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+            <img
+              src="assets/logo6.png"
+              alt="Eric"
+              style="width: 50%; height: 50%"
+            />
+            <ion-card-title> </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">First Name</ion-label>
+              <ion-input type="text" id="input-username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Last Name</ion-label>
+              <ion-input type="text" id="input-username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Cell number</ion-label>
+              <ion-input type="text" id="input-username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="text" id="input-username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating"> Password</ion-label>
+              <ion-input type="text" id="input-username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating"> Confirm Password</ion-label>
+              <ion-input type="text" id="input-password"></ion-input>
+            </ion-item>
+
+            <ion-checkbox labelPlacement="end"
+              >I agree to the terms and conditions</ion-checkbox
+            >
+
+            <div class="ion-margin-vertical ion-text-left">
+              <ion-button id="btn-login" [routerLink]="'/login'">
+                Login
+              </ion-button>
+
+              <ion-button
+                color="dark"
+                id="btn-register"
+                (click)="presentRegistrationSuccessAlert()"
+                [routerLink]="'/login'"
+              >
+                Register
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid></ion-content
+>

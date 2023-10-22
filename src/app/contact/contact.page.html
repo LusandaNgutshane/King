@@ -1,0 +1,58 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title> Eric King Design </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Name</ion-label>
+              <ion-input type="text" id="input-name"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="text" id="input-email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Message</ion-label>
+              <ion-textarea></ion-textarea>
+            </ion-item>
+
+            <div class="ion-margin-vertical ion-text-left">
+              <ion-button id="btn-submit"> Submit </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid></ion-content
+>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" [routerLink]="'/home'">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button tab="radio" [routerLink]="'/contact'">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+          Message
+        </ion-tab-button>
+        <ion-tab-button tab="library" [routerLink]="'/profile'">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          Profile
+        </ion-tab-button>
+        <ion-tab-button tab="search">
+          <ion-icon name="search"></ion-icon>
+          Search
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

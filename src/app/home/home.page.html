@@ -1,0 +1,119 @@
+<ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item [routerLink]="'/profile'">
+          <ion-icon name="people-outline"></ion-icon>
+          User Profile
+        </ion-item>
+        <ion-item [routerLink]="'/about'">
+          <ion-icon name="newspaper-outline"></ion-icon>
+          About Us
+        </ion-item>
+        <ion-item [routerLink]="'/contact'">
+          <ion-icon name="clipboard-outline"></ion-icon>
+          Contact Us
+        </ion-item>
+        <ion-item [routerLink]="'/logout'">
+          <ion-icon name="log-out-outline"></ion-icon>Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <!-- Set a custom color for the header -->
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-searchbar
+          class="custom-search"
+          placeholder="Search services"
+        ></ion-searchbar>
+        <!-- Add a custom class to the search bar for styling -->
+        <ion-buttons slot="start">
+          <ion-segment>
+            <ion-segment-button [routerLink]="'/printing'">
+              Printing
+            </ion-segment-button>
+            <ion-segment-button [routerLink]="'/branding'">
+              Branding
+            </ion-segment-button>
+            <ion-segment-button [routerLink]="'/design'">
+              Design
+            </ion-segment-button>
+          </ion-segment>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div id="container">
+        <hr />
+        <ion-card>
+          <img
+            src="assets/logo6.png"
+            alt="Eric"
+            style="width: 15%; height: 15%; border-radius: 25%"
+          />
+          <ion-card-content>
+            Eric King Design is a versatile design and printing business that
+            offers a wide range of creative and promotional products and
+            services. Based on the information provided, here's a brief overview
+            of what the business offers Eric King Design appears to be a
+            one-stop shop for creative design and promotional products. Whether
+            you need personalized items for an event, business branding, or
+            decorative pieces, they offer a range of solutions to meet your
+            needs.
+            <hr />
+            <br />
+
+            <ion-title style="text-align: center">Our Services</ion-title>
+
+            <ion-list lines="full">
+              <ion-item>
+                <ion-icon name="brush" slot="start"></ion-icon>
+                Graphic Design
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="print" slot="start"></ion-icon>
+                Printing Services
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="megaphone" slot="start"></ion-icon>
+                Marketing Services
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="chatbubbles" slot="start"></ion-icon>
+                Consultation Services
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="easel" slot="start"></ion-icon>
+                Signage and Displays
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="brush" slot="start"></ion-icon>
+                Branding Services
+              </ion-item>
+              <ion-item>
+                <ion-icon name="create" slot="start"></ion-icon>
+                Customization Services
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-content>
+  </div></ion-content
+>

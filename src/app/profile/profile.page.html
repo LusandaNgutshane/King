@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="profile">
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="assets/prof.jpg" />
+    </ion-avatar>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title style="text-align: center">
+          Lusanda Ngutshane</ion-card-title
+        >
+        <ion-card-subtitle style="text-align: center"
+          >Information Technology</ion-card-subtitle
+        >
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input placeholder="Number"></ion-input>
+        </ion-item>
+        <br />
+        <ion-item>
+          <ion-input placeholder="Email"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" [routerLink]="'/home'">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button tab="radio" [routerLink]="'/contact'">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+          Message
+        </ion-tab-button>
+        <ion-tab-button tab="library" [routerLink]="'/profile'">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          Profile
+        </ion-tab-button>
+        <ion-tab-button tab="search">
+          <ion-icon name="search"></ion-icon>
+          Search
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
